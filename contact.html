@@ -1,101 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 
-<style>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    .header
-    {
-        display: flex;
-        justify-content: space-between;
-    }
+        .list li {
+            display: inline;
+            list-style-type: none;
 
-    .list li
-    {
-        display: inline;
-        list-style-type: none;
+
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            font-style: normal;
+            padding: 10px 20px;
+            transition: 1s;
+
+        }
+
+        .list li a:hover {
+            background: white;
+            color: grey;
+            transform: scale(1);
+        }
+
+        .header {
+            background-image: url(./bg-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 17vh;
+            position: relative;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .list {
+            padding-top: 2%;
+            padding-right: 1%;
+        }
+
+        .header1 img {
+            width: 2cm;
+            height: 2cm;
+            float: left;
+            padding-left: 25%;
+            padding-top: 15%;
+            filter: invert(1);
+
+        }
+
+        .line {
+            border: yellow 2px solid;
+
+        }
+
+        .paragraph {
+            text-align: center;
+        }
+
+        .paragraph .underline {
+            display: inline-block;
+            border: yellow 1px solid;
+            background-color: yellow;
+            height: 2px;
+            width: 100px;
+        }
+
+        .special1 {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .special {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .layout1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 15mm;
+            padding-right: 15mm;
+            grid-gap: 70px;
+
+        }
+
+        .layout11 input {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px #888 solid;
+
+        }
+
+
+
+        .entertext {
+            padding-left: 15mm;
+        }
+
+        .onsubmit {
+            color: white;
+            background-color: black;
+            border-color: black;
+            display: inline-block;
+            padding: 8px;
+            text-align: center;
+            width: 50%;
+            transition: all 0.5s;
+            margin-left: 8cm;
+
+        }
+
+        .onsubmit:hover {
+
+            background-color: cadetblue;
+        }
+
+        .layout2 {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding-left: 15mm;
+            padding-right: 15mm;
+            background-color: rgb(159, 155, 155);
+        }
+
+        .layout21 {
+            text-align: left;
+            padding-left: 20mm;
+        }
+
+        .layout22 {
+            text-align: center;
+            padding-right: 30mm;
+        }
+
+        .layout22 img {
+            height: 5cm;
+            width: 7cm;
+            padding-top: 5mm;
+        }
+
+        .layout3 {
+            font-size: 50px;
+            background-color: darkgoldenrod;
+            color: white;
+            text-align: center;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(167, 152, 152);
+            padding-left: 15mm;
+            padding-right: 15mm;
+
+        }
+
+        .footer .footer1 .footer11 {
+            text-decoration: underline yellow;
+            text-align: center;
+        }
+
+        .footer .footer1 .footer12 {
+            text-align: center;
+        }
+
+        .footer .footer2 .footer21 {
+            text-align: center;
+            text-decoration: underline yellow;
+        }
+
+        .footer .footer2 .footer22 li a {
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .footer .footer2 .footer22 li a:hover {
+            color: red;
+            font-size: 5mm;
+            transition: all 1s;
+        }
+
+        .footer .footer3 .footer32 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer3 .footer31 {
+            text-decoration: underline yellow;
+
+        }
+
+        .footer4 {
+            text-align: center;
+            background-color: rgb(167, 152, 152);
+        }
+
+        .footer22 li {
+            list-style-type: none;
+        }
+
+        .footer32 i:hover {
+            color: darkorange;
+            border-radius: 50%;
+            background-color: lightgrey;
+            transition: all 1s;
+        }
+
+        .layout62 img {
+            border-radius: 50%;
+            height: 1.3cm;
+            width: 1.3cm;
+        }
+
+        .layout622 {
+            padding-top: 3mm;
+            padding-left: 1mm;
+        }
+
+        .text-field
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30mm;
         
-        
-    }
+            padding-left: 20mm;
+            padding-right: 20mm;
+        }
 
-    .list li a
-    {
-      text-decoration: none;
-      color: white;
-      font-size:25px;
-      font-weight: 500;
-      font-style: normal;
-      padding: 10px 20px;
-      transition: 1s;
-
-    }
-
-    .list li a:hover  
-    {
-        background: white;
-        color: grey ;
-        transform: scale(1);
-    }
-    
-    .header
-    {
-        background-image: url(./bg-unsplash.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-         height: 17vh;
-        position: relative;
-    }
-
-    *
-    {
-        margin: 0%;
-        padding: 0%;
-
-    }
-    
-    .list
-    {
-        padding-top: 2%;
-        padding-right: 1%;
-    }
-
-    .header1 img
-    { 
-       width: 2cm;
-       height: 2cm;
-       float: left;
-       padding-left: 25%;
-       padding-top: 15%;
-       filter: invert(1);
-       
-    }
-    
-    .line
-    {
-        border: yellow 2px solid;
-
-    }
-</style>
+        .form-content {
+            position: relative;
+            margin: 5px;
+            width: 300px;
+          }
+          .form-content input {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px #888 solid;
+          
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 18px;
+            color: #444;
+          }
+          
+          .form-content input:focus,
+          .form-content input:valid {
+            outline: 0;
+            border-bottom: #222 1.5px solid;
+          }
+          
+          .form-content label {
+            position: absolute;
+            top: 15px;
+            left: 0;
+          }
+          
+          .form-content label span {
+            display: inline-block;
+            font-size: 16px;
+            min-width: 5px;
+            /* transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+            transition: 0.09s ease;
+          }
+          .form-content input:focus + label span,
+          .form-content input:valid + label span {
+            color: #444;
+            transform: translateY(-30px);
+          }
+    </style>
 </head>
 
 
 <body>
 
     <div class="header">
-      
+
         <div class="header1">
-           
-           <img src="Screenshot.png" alt="logo">
-        
+
+            <img src="Screenshot.png" alt="logo">
+
         </div>
         <div class="list">
             <ul>
-                <li> 
+                <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
@@ -117,9 +332,215 @@
             </ul>
 
         </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="paragraph">
+        <div class="special">
+            <br>
+            <br>
+            <p> Contact Me </p>
+            <br>
+        </div>
+        <div class="underline">
+            <br>
+        </div>
+        <div class="special1">
+            <p> Here is how you can reach me </p>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="text-field">
+
+        <div class="form-content">
+            <input type="text" class="text-input name-input" pattern="[a-zA-Z].{2,}" title="Must be alphbets only,minimum 3 " required="">
+            <label><span style="transition-delay:0ms">N</span><span style="transition-delay:80ms">a</span><span style="transition-delay:160ms">m</span><span style="transition-delay:240ms">e</span></label>
+        </div>
+        <div class="form-content">
+
+            <input type="text" class="text-input subject-input" required="">
+            <label><span style="transition-delay:0ms">S</span><span style="transition-delay:80ms">u</span><span style="transition-delay:160ms">b</span><span style="transition-delay:240ms">j</span><span style="transition-delay:320ms">e</span><span style="transition-delay:400ms">c</span><span style="transition-delay:480ms">t</span></label>
+        </div>
+        <div class="form-content">
+
+            <input type="email" class="text-input email-input" title="Email format must be @.__" required="">
+                <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+            <label><span style="transition-delay:0ms">E</span><span style="transition-delay:80ms">m</span><span style="transition-delay:160ms">a</span><span style="transition-delay:240ms">i</span><span style="transition-delay:320ms">l</span></label>
+        </div>
+        <div class="form-content">
+
+            <input type="text" class="text-input phone-input" title="Exactly 10 digits  " required="">
+                <!-- pattern="[0-9]{10,10}" -->
+            <label><span style="transition-delay:0ms">P</span><span style="transition-delay:80ms">h</span><span style="transition-delay:160ms">o</span><span style="transition-delay:240ms">n</span><span style="transition-delay:320ms">e</span><span style="transition-delay:400ms"> </span><span style="transition-delay:480ms">N</span><span style="transition-delay:560ms">o</span></label>
         </div>
 
-         <hr class="line">
-    
+
+
+    </div>
+
+
+
+    <br><br>
+    <div class="entertext">
+
+        <textarea name="area" cols="155" rows="7" placeholder="Enter Message"></textarea>
+    </div>
+    <br>
+    <button type="submit" class="onsubmit">Submit</button>
+    <br>
+    <br>
+
+
+    <div class="layout2">
+
+        <div class="layout21">
+            <br><br>
+            <i class="fa-solid fa-address-card fa-2x"></i>
+            <h3> Address </h3>
+            <br>
+            <p> Mahavir Jain Vidhyalay,</p>
+            <p> Near, Dashaporwad Society,</p>
+            <p> Suvidha Char rasta, Paldi,</p>
+            <p> Ahmedabad ,Gujarat 380061 </p>
+            <br>
+            <br>
+
+        </div>
+        <div class="layout22">
+
+            <a href="https://maps.app.goo.gl/yLZBELRHV7Vv7YKCA" target="_blank"> <img src="map.jpeg"> </a>
+
+        </div>
+    </div>
+
+    <div class="layout3">
+
+        <br>
+        <p> Lets start your next Project </p>
+        <br>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="footer1">
+            <div class="footer11">
+                <br><br>
+                <h3>Address</h3>
+                <br>
+            </div>
+            <div class="footer12">
+                <p> Mahavir Jain Vidhyalay,</p>
+                <p> Near, Dashaporwad Society,</p>
+                <p> Suvidha Char rasta, Paldi,</p>
+                <p> Ahmedabad ,Gujarat 380061 </p>
+            </div>
+
+
+        </div>
+        <div class="footer2 ">
+            <div class="footer21">
+                <br><br>
+                <h3> Navigate </h3>
+                <br>
+
+            </div>
+
+
+            <div class="footer22">
+
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li><br>
+                    <li>
+                        <a href="about.html"> About</a>
+                    </li><br>
+                    <li>
+                        <a href="Activities.html"> Activities</a>
+                    </li><br>
+                    <li>
+                        <a href="Blog.html"> Blog </a>
+                    </li><br>
+                    <li>
+                        <a href="work.html"> Projects</a>
+                    </li><br>
+                    <li>
+                        <a href="contact.html"> Contact</a>
+                    </li><br>
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="footer3">
+            <div class="footer31">
+                <br><br>
+                <h3> Follow Me</h3>
+                <br>
+            </div>
+            <div class="footer32">
+
+                <i class="fa-brands fa-facebook fa-2x"></i>
+
+                <i class="fa-brands fa-twitter fa-2x"></i>
+
+                <a href="https://instagram.com/_pshah__11?igshid=YmMyMTA2M2Y=">
+                    <i class="fa-brands fa-instagram fa-2x"></i></a>
+
+
+                <a href="https://www.linkedin.com/in/pshah11">
+                    <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+
+            </div><br>
+
+            <div>
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <h3>
+                    Email
+                </h3>
+                <h4> pshah76058@gmail.com</h4><br>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-phone fa-2x"></i>
+                <h3>
+                    Phone
+                </h3>
+                <h4>
+                    +91-1222333445
+                </h4>
+            </div> <br><br>
+
+        </div>
+
+    </div>
+    <div class="footer4">
+        <h3> Copyright 2022 Reserved</h3>
+        <br><br><br><br>
+
+    </div>
+
+
+    <script>
+        const labels = document.querySelectorAll( '.label' );
+
+        labels.forEach( function( label ) {
+            label.innerHTML = label.innerText
+                .split( "" )
+                .map(function(letter, idx){
+            return `<span style='transition-delay:${idx * 80}ms'>${letter}</span>`
+        })
+                .join( "" );
+        } );
+    </script>
+
 </body>
+
+
 </html>

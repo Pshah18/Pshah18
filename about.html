@@ -1,335 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
 
-        .header
-            {
-                display: flex;
-                justify-content: space-between;
+        .list li {
+            display: inline;
+            list-style-type: none;
+
+
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            font-style: normal;
+            padding: 10px 20px;
+            transition: 1s;
+
+        }
+
+        .list li a:hover {
+            background: white;
+            color: grey;
+            transform: scale(1);
+        }
+
+        .header {
+            background-image: url(./bg-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 17vh;
+            position: relative;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .list {
+            padding-top: 2%;
+            padding-right: 1%;
+        }
+
+        .header1 img {
+            width: 2cm;
+            height: 2cm;
+            float: left;
+            padding-left: 25%;
+            padding-top: 15%;
+            filter: invert(1);
+
+        }
+
+        .line {
+            border: yellow 2px solid;
+
+        }
+
+        .paragraph {
+            text-align: center;
+        }
+
+        .paragraph .underline {
+            display: inline-block;
+            border: yellow 1px solid;
+            background-color: yellow;
+            height: 2px;
+            width: 70px;
+        }
+
+        .pic img {
+            height: 5cm;
+            width: 6cm;
+        }
+
+        .layout1 {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 15mm;
+            padding-right: 15mm;
+            text-align: center;
+        }
+
+        .layout11 {
+            text-align: center;
+
+
+        }
+
+
+        .layout12 {
+            text-align: center;
+            border-left: 5px solid yellow;
+            background-color: rgb(191, 189, 194);
+            padding: 5mm;
+        }
+
+        .layout2 {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding-left: 15mm;
+            padding-right: 15mm;
+
+        }
+
+        .layout3 {
+            text-align: center;
+            background-color: rgba(189, 177, 199, 0.742);
+        }
+
+        .layout3 .layout32 {
+
+            display: inline-block;
+            border: yellow 1px solid;
+            background-color: yellow;
+            height: 2px;
+            width: 90px;
+
+        }
+
+        .layout33 {
+            text-align: left;
+            padding: 15mm;
+
+        }
+
+        .layout3 .layout33 li {
+            list-style-type: none;
+        }
+
+        .layout4 {
+            text-align: center;
+            padding-left: 15mm;
+            padding-right: 15mm;
+        }
+
+        .layout4 .layout42 {
+            display: inline-block;
+            border: yellow 1px solid;
+            background-color: yellow;
+            height: 2px;
+            width: 90px;
+        }
+
+        .layout43 {
+            text-align: left;
+            font-size: 6mm;
+        }
+
+        .layout5 {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 7mm;
+            padding-right: 7mm;
+        }
+
+        .layout51 {
+            padding-left: 3mm;
+            margin-left: 5mm;
+            box-shadow: 5px 7px 10px rgb(146, 143, 146);
+        }
+
+
+        .layout6 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .layout61 {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 15mm;
+            padding-right: 15mm;
+
+        }
+
+        .layout62 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .layout7 {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-color: rgb(187, 180, 211);
+            padding-left: 90mm;
+            padding-right: 90mm;
+
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(167, 152, 152);
+            padding-left: 15mm;
+            padding-right: 15mm;
+
+        }
+
+        .footer .footer1 .footer11 {
+            text-decoration: underline yellow;
+            text-align: center;
+        }
+
+        .footer .footer1 .footer12 {
+            text-align: center;
+        }
+
+        .footer .footer2 .footer21 {
+            text-align: center;
+            text-decoration: underline yellow;
+        }
+
+        .footer .footer2 .footer22 li a {
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .footer .footer2 .footer22 li a:hover {
+            color: red;
+            font-size: 5mm;
+            transition: all 1s;
+        }
+
+        .footer .footer3 .footer32 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer3 .footer31 {
+            text-decoration: underline yellow;
+
+        }
+
+        .footer4 {
+            text-align: center;
+            background-color: rgb(167, 152, 152);
+        }
+
+        .footer22 li {
+            list-style-type: none;
+        }
+
+        .footer32 i:hover {
+            color: darkorange;
+            border-radius: 50%;
+            background-color: lightgrey;
+            transition: all 1s;
+        }
+
+        .layout62 img {
+            border-radius: 50%;
+            height: 1.3cm;
+            width: 1.3cm;
+        }
+
+        .layout622 {
+            padding-top: 3mm;
+            padding-left: 1mm;
+        }
+
+
+        .container {
+            overflow: hidden;
+            background-color: rgb(66, 60, 60);
+            border-radius: 6px;
+            height: 3vh;
+        }
+
+        .box {
+            height: 3vh;
+            width: 0vh;
+            background-color: rgba(153, 121, 197, 0.677);
+            border-radius: 6px;
+            position: relative;
+            animation-name: animation1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes animation1 {
+            from {
+                width: 0%;
+
             }
 
-            .list li
-            {
-                display: inline;
-                list-style-type: none;
-                
-                
+            to {
+                width: 95%;
             }
 
-            .list li a
-            {
-              text-decoration: none;
-              color: white;
-              font-size:25px;
-              font-weight: 500;
-              font-style: normal;
-              padding: 10px 20px;
-              transition: 1s;
-    
-            }
+        }
 
-            .list li a:hover  
-            {
-                background: white;
-                color: grey ;
-                transform: scale(1);
-            }
-            
-            .header
-            {
-                background-image: url(./bg-unsplash.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                 height: 17vh;
-                position: relative;
-            }
+        .box1 {
+            height: 3vh;
+            width: 0vh;
+            background-color:  rgba(153, 121, 197, 0.677);
+            border-radius: 6px;
+            position: relative;
+            animation-name: animation2;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
 
-            *
-            {
-                margin: 0%;
-                padding: 0%;
+        }
 
-            }
-            
-            .list
-            {
-                padding-top: 2%;
-                padding-right: 1%;
-            }
-        
-            .header1 img
-            { 
-               width: 2cm;
-               height: 2cm;
-               float: left;
-               padding-left: 25%;
-               padding-top: 15%;
-               filter: invert(1);
-               
-            }
-            
-            .line
-            {
-                border: yellow 2px solid;
+        @keyframes animation2 {
+            from {
+                width: 0%;
 
             }
 
-            .paragraph
-            {
-                 text-align: center;
+            to {
+                width: 90%;
             }
 
-            .paragraph .underline 
-            {
-                     display: inline-block;
-                     border: yellow 1px solid;
-                     background-color: yellow;
-                     height: 2px;
-                     width: 70px;
+        }
+
+        .box2 {
+            height: 3vh;
+            width: 0vh;
+            background-color:  rgba(153, 121, 197, 0.677);
+            border-radius: 6px;
+            position: relative;
+            animation-name: animation3;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes animation3 {
+            from {
+                width: 0%;
+
             }
 
-            .pic img
-            {
-                     height: 5cm;
-                     width: 6cm;
+            to {
+                width: 87%;
             }
 
-            .layout1
-            {
-                display: flex;
-                justify-content: space-between;
-                padding-left: 15mm;
-                padding-right: 15mm;
-                text-align: center;
+        }
+
+        .box3 {
+            height: 3vh;
+            width: 0vh;
+            background-color:  rgba(153, 121, 197, 0.677);
+            border-radius: 6px;
+            position: relative;
+            animation-name: animation4;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes animation4 {
+            from {
+                width: 0%;
+
             }
 
-            .layout11
-            {
-                text-align: center;
-               
-               
+            to {
+                width: 85%;
             }
 
+        }
 
-            .layout12{
-                text-align: center;
-                border-left: 5px solid yellow;
-                background-color: rgb(194, 189, 189);
-                padding: 5mm;
+        .box4 {
+            height: 3vh;
+            width: 0vh;
+            background-color:  rgba(153, 121, 197, 0.677);
+            border-radius: 6px;
+            position: relative;
+            animation-name: animation5;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes animation5 {
+            from {
+                width: 0%;
+
             }
 
-            .layout2
-            {
-                 display: flex;
-                 justify-content: space-between;
-                 text-align: center;
-                 padding-left: 15mm;
-                 padding-right: 15mm;
-                
+            to {
+                width: 89%;
             }
 
-            .layout3{
-                text-align: center;
-                background-color: gray ;
+        }
+
+        .box5 {
+            height: 3vh;
+            width: 0vh;
+            background-color:  rgba(153, 121, 197, 0.677);
+            border-radius: 6px;
+            position: relative;
+            animation-name: animation6;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes animation6 {
+            from {
+                width: 0%;
+
             }
 
-            .layout3 .layout32
-            {
-                 
-                display: inline-block;
-                border: yellow 1px solid;
-                background-color: yellow;
-                height: 2px;
-                width: 90px;
-                
+            to {
+                width: 75%;
             }
 
-            .layout33
-            {
-                text-align: left;
-                padding: 15mm;
-                
-            }
-
-            .layout3 .layout33 li
-            {
-                list-style-type: none;
-            }
-
-            .layout4{
-                text-align: center;
-                padding-left: 15mm;
-                padding-right: 15mm;
-            }
-
-            .layout4 .layout42
-            {
-                display: inline-block;
-                border: yellow 1px solid;
-                background-color: yellow;
-                height: 2px;
-                width: 90px;
-            }
-            
-            .layout43
-            {
-                text-align: left;
-                 font-size: 6mm;
-            }
-
-            .layout5
-            {
-                display: flex;
-                justify-content: space-between;
-                padding-left: 7mm;
-                padding-right: 7mm;
-            }
-
-            .layout51
-            {
-                padding-left: 3mm;
-                margin-left: 5mm;
-                border: 1px solid black;
-            }
-
-
-            .layout6
-            {
-                display: flex;
-                justify-content: space-between;
-            }
-
-             .layout61
-            {
-                display: flex;
-                justify-content: space-between;
-                padding-left: 15mm;
-                padding-right: 15mm;
-                
-            }
-
-            .layout62
-            {
-                display: flex;
-                justify-content: space-around;
-            }
-
-            .layout7
-            {
-                display: flex;
-                justify-content: space-between;
-                text-align: center;
-                background-color: rgb(234, 195, 95);
-                padding-left: 90mm;
-                padding-right: 90mm;
-
-                
-            }
-
-            .footer{
-                display: flex;
-                justify-content: space-between;
-                background-color:  rgb(167, 152, 152);
-                padding-left: 15mm;
-                padding-right: 15mm;
-
-             }
-
-             .footer .footer1 .footer11{
-                text-decoration: underline yellow;
-                text-align: center;
-             }
-
-             .footer .footer1 .footer12{
-                text-align: center;
-             }
-
-             .footer .footer2 .footer21
-             {
-                text-align: center;
-                text-decoration: underline yellow;
-             }
-
-             .footer .footer2 .footer22 li a{
-                text-align: center;
-                text-decoration: none;
-                list-style-type: none;
-             }
-
-             .footer .footer2 .footer22 li a:hover
-             {
-                  color: red;
-                  font-size: 5mm;
-                  transition: all 1s;
-             }
-
-             .footer .footer3 .footer32{
-                display: flex;
-                justify-content: space-between;
-             }
-
-             .footer3 .footer31 
-             {
-               text-decoration: underline yellow;
-               
-             }
-
-             .footer4
-             {
-                text-align: center;
-                background-color: rgb(167, 152, 152);
-             }
- 
-             .footer22  li{
-                list-style-type: none;
-             }
-
-             .footer32 i:hover
-             {
-                color: darkorange;
-                border-radius: 50%;
-                background-color: lightgrey;
-                transition: all 1s;
-             }
-            
-             .layout62 img
-             {
-                border-radius: 50%;
-                height: 1.3cm;
-                width: 1.3cm;
-             }
-
-             .layout622
-             {
-                padding-top: 3mm;
-                padding-left: 1mm;
-             }
-            
-            
-            
-      </style>
+        }
+    </style>
 
 </head>
 
 <body>
-    
+
     <div class="header">
-      
+
         <div class="header1">
-           
-           <img src="Screenshot.png" alt="logo">
-        
+
+            <img src="Screenshot.png" alt="logo">
+
         </div>
         <div class="list">
             <ul>
-                <li> 
+                <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
@@ -351,109 +475,111 @@
             </ul>
 
         </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="paragraph">
+        <div class="special">
+            <br>
+            <br>
+            <h1> ABOUT ME </h1>
+            <br>
+        </div>
+        <div class="underline">
+            <br>
+        </div>
+        <div class="special1">
+            <h3>Let me tell you a little about myself and what I do. </h3>
+            <br>
+            <br>
+            <br>
+
+
+        </div>
+    </div>
+
+    <div class="layout1">
+
+        <div class="layout11">
+
+            <h1 class="pic">
+                <img src="pic.jpeg">
+            </h1>
+
         </div>
 
-         <hr class="line">
-
-         <div class="paragraph">
-            <div class="special">
-                <br>
-                <br>
-               <h1> ABOUT ME </h1>
-               <br>
-            </div>
-            <div class="underline">
-                <br>
-            </div>
-            <div class="special1">
-                <h3>Let me tell you a little about myself and what I do. </h3>
-                <br>
-                <br>
-                <br>
-
-
-            </div>
-        </div>
-
-        <div class="layout1">
-
-          <div class="layout11">
-
-           <h1 class="pic">
-               <img src="pic.jpeg">
-           </h1>
-
-          </div>
-     
-          <div class="layout12">
+        <div class="layout12">
 
             <div>
                 <br>
                 <h3> YOUR PROJECT IS IN SAFE HANDS </h3>
                 <br>
 
-               <p>      Lorem, ipsum dolor sit amet rem labore illum odio totam magni consectetur adipisicing elit. tempore quos maiores eveniet, </p>
-               <p> Voluptates iste a, fugit optio, tempore itae corporis nihil quisquam. Non, modi! fuga!quos maiores eveniet,</p>
-               <p> explicabo repellendus totam vitae fuga!</p>
-               <br>
-               <br>
+                <p> Lorem, ipsum dolor sit amet rem labore illum odio totam magni consectetur adipisicing elit. tempore
+                    quos maiores eveniet, </p>
+                <p> Voluptates iste a, fugit optio, tempore itae corporis nihil quisquam. Non, modi! fuga!quos maiores
+                    eveniet,</p>
+                <p> explicabo repellendus totam vitae fuga!</p>
+                <br>
+                <br>
             </div>
-
-          </div>
 
         </div>
-        <br><Br>
 
-       <div class="layout2">
-         
-            <div>
-                <i class="fa-solid fa-medal fa-2x" style="color: rgb(212, 147, 17);"></i>
-                <br> <br>
-                <h3>AWARD ONE</h3>
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, odio.
-                </p>
+    </div>
+    <br><Br>
 
-            </div>
+    <div class="layout2">
 
-            <div>
-                <i class="fa-solid fa-medal fa-2x " style="color: rgb(212, 147, 17);"></i>
-                <br><br>
-                <h3>AWARD TWO</h3>
-                <br>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, sit!</p>
-
-            </div>
-
-            <div>
-                <i class="fa-solid fa-medal  fa-2x"  style="color: rgb(212, 147, 17);"></i>
-                <br><br>
-                <h3>
-                    AWARD THREE
-                </h3>
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minus.
-                </p>
-
-            </div>
-
-       </div><br><br>
-
-       <div class="layout3">
-        
-        <div class="layout31"> 
+        <div>
+            <i class="fa-solid fa-medal fa-2x" style="color: rgb(212, 147, 17);"></i>
+            <br> <br>
+            <h3>AWARD ONE</h3>
             <br>
-            <br> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, odio.
+            </p>
+
+        </div>
+
+        <div>
+            <i class="fa-solid fa-medal fa-2x " style="color: rgb(212, 147, 17);"></i>
+            <br><br>
+            <h3>AWARD TWO</h3>
+            <br>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, sit!</p>
+
+        </div>
+
+        <div>
+            <i class="fa-solid fa-medal  fa-2x" style="color: rgb(212, 147, 17);"></i>
+            <br><br>
+            <h3>
+                AWARD THREE
+            </h3>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minus.
+            </p>
+
+        </div>
+
+    </div><br><br>
+
+    <div class="layout3" id="about-b">
+        <!-- <section id="about-b" class="bg-dark py-3" ></section> -->
+        <div class="layout31">
+            <br>
+            <br>
             <h1>
                 TECHNICAL SKILLS
             </h1>
             <br>
         </div>
-        
+
         <div class="layout32">
-         <br>
+            
 
         </div>
 
@@ -461,30 +587,74 @@
 
             <ul>
                 <li>HTML:</li>
+
+                <div class="container">
+                    <div class="box">
+
+                    </div>
+
+                </div>
+
                 <br>
                 <li>CSS:</li>
+                <div class="container">
+                    <div class="box1">
+
+                    </div>
+
+                </div>
+
                 <br>
                 <li>BOOTSTRAP:</li>
+                <div class="container">
+                    <div class="box2">
+
+                    </div>
+
+                </div>
+
                 <br>
                 <li> SASS:</li>
+                <div class="container">
+                    <div class="box3">
+
+                    </div>
+
+                </div>
+
                 <br>
                 <li> JAVASCRIPT:</li>
+                <div class="container">
+                    <div class="box4">
+
+                    </div>
+
+                </div>
+
                 <br>
                 <li>RECATJS:</li>
-                <br>
-            </ul>
+                <div class="container">
+                    <div class="box5">
+
+                    </div>
+
+                </div>
 
         </div>
+        <br>
+        </ul>
 
-       </div>
+    </div>
 
-       <div class="layout4">
+    </div>
+
+    <div class="layout4">
         <div class="layout41">
             <h1>
                 <br>
                 <br>
                 TESTIMONIALS
-                
+
             </h1>
             <br>
         </div>
@@ -495,57 +665,65 @@
         <p class="layout43">
             Take a look at what people say about me
         </p><br><br>
-       </div>
+    </div>
 
-    <div  class="layout5">
+    <div class="layout5">
 
-        <div class="layout51">  
-            <p> <br> ipsum dolor sit amet consectetur, adipisicing elit. Beatae earum, placeat nobis modi corrupti aspernatur molestias voluptate blanditiis rerum quae, ipsam tenetur voluptatibus? Sed dolores, saepe praesentium cumque nostrum alias.</p>
+        <div class="layout51">
+            <p> <br> ipsum dolor sit amet consectetur, adipisicing elit. Beatae earum, placeat nobis modi corrupti
+                aspernatur molestias voluptate blanditiis rerum quae, ipsam tenetur voluptatibus? Sed dolores, saepe
+                praesentium cumque nostrum alias.</p><br>
         </div>
         <div class="layout51">
-           <p><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt quas explicabo! Quam provident ratione vero blanditiis ea voluptate minus rerum, quia harum assumenda obcaecati! Temporibus maiores iste dignissimos explicabo?
-           </p>
+            <p><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt quas explicabo! Quam provident
+                ratione vero blanditiis ea voluptate minus rerum, quia harum assumenda obcaecati! Temporibus maiores
+                iste dignissimos explicabo?<br>
+            </p>
         </div>
         <div class="layout51">
-           <p><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, distinctio aspernatur? Quos quibusdam excepturi vel odit vitae magnam totam fugit tempore voluptatum ea, ut veritatis. Cumque voluptas iste accusamus earum.
-           </p>
+            <p><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, distinctio aspernatur? Quos
+                quibusdam excepturi vel odit vitae magnam totam fugit tempore voluptatum ea, ut veritatis. Cumque
+                voluptas iste accusamus earum.
+            </p><br>
         </div>
         <div class="layout51">
-            <p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum reiciendis, eius suscipit dolorem pariatur omnis sit vel explicabo magni quidem eos et maxime ducimus provident deleniti, sunt, sed accusamus?</p>
+            <p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum reiciendis, eius suscipit
+                dolorem pariatur omnis sit vel explicabo magni quidem eos et maxime ducimus provident deleniti, sunt,
+                sed accusamus?</p> <br>
         </div>
-    
-        
+
+
     </div>
     <br>
-    <br>
-   
+
+
     <div class="layout6">
-         <div class="layout61">
+        <div class="layout61">
 
             <div class="layout62">
                 <img src="person1.jpg">
             </div>
 
             <div class="layout622">
-               <h4> Sam Smith , New York</h4>
+                <h4> Sam Smith , New York</h4>
             </div>
-         </div>
+        </div>
 
-         <div class="layout61">
-              <div class="layout62">
-                  <img src="person2.jpg">
-              </div>
+        <div class="layout61">
+            <div class="layout62">
+                <img src="person2.jpg">
+            </div>
 
-              <div class="layout622">
-                 <h4> Sarah Williams, London</h4>
-              </div>
-         </div>
+            <div class="layout622">
+                <h4> Sarah Williams, London</h4>
+            </div>
+        </div>
 
-         <div class="layout61">
-            <div class="layout62" >
-                
+        <div class="layout61">
+            <div class="layout62">
+
                 <img src="person3.jpg">
             </div>
 
@@ -554,9 +732,9 @@
                     Bill Elly, Paris
                 </h4>
             </div>
-         </div>
+        </div>
 
-         <div class="layout61">
+        <div class="layout61">
             <div class="layout62">
                 <img src="person4.jpg">
             </div>
@@ -564,7 +742,7 @@
             <div class="layout622">
                 <h4> Hailey Traversy, Boston</h4>
             </div>
-         </div>
+        </div>
     </div> <br><br>
 
     <div class="layout7">
@@ -576,9 +754,9 @@
             <h4> Twitter follower</h4>
             <br>
         </div>
-        
-        
-            <div class="layout71">
+
+
+        <div class="layout71">
             <i class="fa-brands fa-youtube fa-3x"></i><br><br>
             <h1> 500</h1>
             <br>
@@ -587,14 +765,14 @@
             </h4>
             <br>
         </div>
-       
-            <div class="layout71">
+
+        <div class="layout71">
             <i class="fa-brands fa-facebook fa-3x"></i> <br><br>
             <h1> 550</h1>
             <br>
             <h4>Facebook Fans</h4><br>
-            </div>
-            
+        </div>
+
     </div>
 
     <div class="footer">
@@ -606,10 +784,10 @@
                 <br>
             </div>
             <div class="footer12">
-               <p> Mahavir Jain Vidhyalay,</p>
-               <p> Near, Dashaporwad Society,</p>
-              <p>  Suvidha Char rasta, Paldi,</p>
-               <p> Ahmedabad ,Gujarat 380061 </p>
+                <p> Mahavir Jain Vidhyalay,</p>
+                <p> Near, Dashaporwad Society,</p>
+                <p> Suvidha Char rasta, Paldi,</p>
+                <p> Ahmedabad ,Gujarat 380061 </p>
             </div>
 
 
@@ -617,17 +795,17 @@
         <div class="footer2 ">
             <div class="footer21">
                 <br><br>
-               <h3> Navigate </h3>
-               <br>
+                <h3> Navigate </h3>
+                <br>
 
             </div>
 
 
             <div class="footer22">
-             
+
 
                 <ul>
-                    <li> 
+                    <li>
                         <a href="index.html">Home</a>
                     </li><br>
                     <li>
@@ -645,7 +823,7 @@
                     <li>
                         <a href="contact.html"> Contact</a>
                     </li><br>
-    
+
                 </ul>
             </div>
 
@@ -654,51 +832,51 @@
         <div class="footer3">
             <div class="footer31">
                 <br><br>
-               <h3> Follow Me</h3>
-               <br>
+                <h3> Follow Me</h3>
+                <br>
             </div>
-               <div class="footer32">
-                
+            <div class="footer32">
+
                 <i class="fa-brands fa-facebook fa-2x"></i>
-               
+
                 <i class="fa-brands fa-twitter fa-2x"></i>
 
-               <a href="https://instagram.com/_pshah__11?igshid=YmMyMTA2M2Y=">
-                <i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://instagram.com/_pshah__11?igshid=YmMyMTA2M2Y=">
+                    <i class="fa-brands fa-instagram fa-2x"></i></a>
 
 
-               <a href="https://www.linkedin.com/in/pshah11">
-                <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-                
-               </div><br>
+                <a href="https://www.linkedin.com/in/pshah11">
+                    <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
 
-                <div>
-                    <i class="fa-solid fa-envelope fa-2x"></i>
-                    <h3>
-                        Email
-                    </h3>
-                    <h4> pshah76058@gmail.com</h4><br>
-                </div>
-                <div>
-                    <i class="fa-solid fa-square-phone fa-2x"></i>
-                    <h3>
-                        Phone
-                    </h3>
-                    <h4>
-                        +91-1222333445
-                    </h4>
-                </div> <br><br>
+            </div><br>
+
+            <div>
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <h3>
+                    Email
+                </h3>
+                <h4> pshah76058@gmail.com</h4><br>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-phone fa-2x"></i>
+                <h3>
+                    Phone
+                </h3>
+                <h4>
+                    +91-1222333445
+                </h4>
+            </div> <br><br>
 
         </div>
 
     </div>
-      <div class="footer4">
+    <div class="footer4">
         <h3> Copyright 2022 Reserved</h3>
         <br><br><br><br>
 
-      </div>
+    </div>
 
-
-    
+   
 </body>
+
 </html>
