@@ -1,218 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 
     <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
 
-        .header
-            {
-                display: flex;
-                justify-content: space-between;
-            }
+        .list li {
+            display: inline;
+            list-style-type: none;
 
-            .list li
-            {
-                display: inline;
-                list-style-type: none;
-                
-                
-            }
 
-            .list li a
-            {
-              text-decoration: none;
-              color: white;
-              font-size:25px;
-              font-weight: 500;
-              font-style: normal;
-              padding: 10px 20px;
-              transition: 1s;
-    
-            }
+        }
 
-            .list li a:hover  
-            {
-                background: white;
-                color: grey ;
-                transform: scale(1);
-            }
-            
-            .header
-            {
-                background-image: url(./bg-unsplash.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                 height: 17vh;
-                position: relative;
-            }
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            font-style: normal;
+            padding: 10px 20px;
+            transition: 1s;
 
-            *
-            {
-                margin: 0%;
-                padding: 0%;
+        }
 
-            }
-            
-            .list
-            {
-                padding-top: 2%;
-                padding-right: 1%;
-            }
-        
-            .header1 img
-            { 
-               width: 2cm;
-               height: 2cm;
-               float: left;
-               padding-left: 25%;
-               padding-top: 15%;
-               filter: invert(1);
-               
-            }
+        .list li a:hover {
+            background: white;
+            color: grey;
+            transform: scale(1);
+        }
 
-            .line
-            {
-                border: yellow 2px solid;
-            }
+        .header {
+            background-image: url(./bg-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 17vh;
+            position: relative;
+        }
 
-            .layout12
-            {
-                display: flex;
-                
-                
-            }
+        * {
+            margin: 0%;
+            padding: 0%;
 
-            .layout22{
-                display: flex;
-                
-            
-            }
+        }
 
-            .layout111
-            {
-                display: flex;
-            }
- 
-   
-            .layout211
-            {
-                display: flex;
-            }
+        .list {
+            padding-top: 2%;
+            padding-right: 1%;
+        }
 
-            .layout11{
-                background-color: bisque;
-                padding-left: 10mm;
-                padding-right: 10mm;
-            }
+        .header1 img {
+            width: 2cm;
+            height: 2cm;
+            float: left;
+            padding-left: 25%;
+            padding-top: 15%;
+            filter: invert(1);
 
-            .layout21{
-                background-color: rgb(137, 174, 244);
-                padding-left: 10mm;
-                padding-right: 10mm;
-            }
+        }
 
-            .pic img
-            {
-                border-radius: 50%;
-                height: 1.6cm;
-                width: 1.6cm;
-            }
+        .line {
+            border: yellow 2px solid;
+        }
 
-            .blog
-            {
-                padding-top: 3mm;
-                padding-left: 2mm;
-                font-size: 9mm;
-            }
+        .layout12 {
+            display: flex;
 
-            .footer{
-                display: flex;
-                justify-content: space-between;
-                background-color:  rgb(167, 152, 152);
-                padding-left: 15mm;
-                padding-right: 15mm;
 
-             }
+        }
 
-             .footer .footer1 .footer11{
-                text-decoration: underline yellow;
-                text-align: center;
-             }
+        .layout22 {
+            display: flex;
 
-             .footer .footer1 .footer12{
-                text-align: center;
-             }
 
-             .footer .footer2 .footer21
-             {
-                text-align: center;
-                text-decoration: underline yellow;
-             }
+        }
 
-             .footer .footer2 .footer22 li a{
-                text-align: center;
-                text-decoration: none;
-                list-style-type: none;
-             }
+        .layout111 {
+            display: flex;
+        }
 
-             .footer .footer2 .footer22 li a:hover
-             {
-                  color: red;
-                  font-size: 5mm;
-                  transition: all 1s;
-             }
 
-             .footer .footer3 .footer32{
-                display: flex;
-                justify-content: space-between;
-             }
+        .layout211 {
+            display: flex;
+        }
 
-             .footer3 .footer31 
-             {
-               text-decoration: underline yellow;
-               
-             }
+        .layout11 {
+            background-color: rgba(189, 177, 199, 0.742);
+            padding-left: 10mm;
+            padding-right: 10mm;
+        }
 
-             .footer4
-             {
-                text-align: center;
-                background-color: rgb(167, 152, 152);
-             }
- 
-             .footer22  li{
-                list-style-type: none;
-             }
+        .layout21 {
+            background-color: rgba(169, 143, 180, 0.726);
+            padding-left: 10mm;
+            padding-right: 10mm;
+        }
 
-             .footer32 i:hover
-             {
-                color: darkorange;
-                border-radius: 50%;
-                background-color: lightgrey;
-                transition: all 1s;
-             }
+        .pic img {
+            border-radius: 50%;
+            height: 1.6cm;
+            width: 1.6cm;
+        }
 
-             
-      </style>
+        .blog {
+            padding-top: 3mm;
+            padding-left: 2mm;
+            font-size: 9mm;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(167, 152, 152);
+            padding-left: 15mm;
+            padding-right: 15mm;
+
+        }
+
+        .footer .footer1 .footer11 {
+            text-decoration: underline yellow;
+            text-align: center;
+        }
+
+        .footer .footer1 .footer12 {
+            text-align: center;
+        }
+
+        .footer .footer2 .footer21 {
+            text-align: center;
+            text-decoration: underline yellow;
+        }
+
+        .footer .footer2 .footer22 li a {
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .footer .footer2 .footer22 li a:hover {
+            color: red;
+            font-size: 5mm;
+            transition: all 1s;
+        }
+
+        .footer .footer3 .footer32 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer3 .footer31 {
+            text-decoration: underline yellow;
+
+        }
+
+        .footer4 {
+            text-align: center;
+            background-color: rgb(167, 152, 152);
+        }
+
+        .footer22 li {
+            list-style-type: none;
+        }
+
+        .footer32 i:hover {
+            color: darkorange;
+            border-radius: 50%;
+            background-color: lightgrey;
+            transition: all 1s;
+        }
+
+        .hide-1 {
+            display: none;
+        }
+
+        .hide-2 {
+            display: none;
+        }
+
+        .hide-3 {
+            display: none;
+        }
+
+        .hide-4 {
+            display: none;
+        }
+
+        .btn-11 {
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid;
+            transition: 0.5s;
+        }
+
+        .btn-11:hover {
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
 
 
 </head>
+
 <body>
-        
+
     <div class="header">
-      
+
         <div class="header1">
-           
-           <img src="Screenshot.png" alt="logo">
+
+            <img src="Screenshot.png" alt="logo">
         </div>
         <div class="list">
             <ul>
-                <li> 
+                <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
@@ -234,214 +244,317 @@
             </ul>
 
         </div>
-        </div>
-    
-        <hr class="line">
+    </div>
 
-        <div class="layout1">
-     
-            <div class="layout11"> <br><br>
-                <div class="layout111">  
-                        
-                       <div class="pic">
-                    
-                          <img src="tetiana-shadrina-zdXY-1DXv9g-unsplash.jpg"> 
-                       </div>
-                       <div class="blog">
-                         <p> BLOG POST ONE</p>
-                       </div>
+    <hr class="line">
+    <br>
+
+    <div class="layout1">
+
+        <div class="layout11"> <br><br>
+            <div class="layout111">
+
+                <div class="pic">
+
+                    <img src="tetiana-shadrina-zdXY-1DXv9g-unsplash.jpg">
                 </div>
-                      
-                <br>
-                <div class="layout12">
-                    <i class="fa-solid fa-circle-user"></i> 
-                    <p> Posted by John Doe | April 29 2021</p>
-
+                <div class="blog">
+                    <p> BLOG POST ONE</p>
                 </div>
+            </div>
 
-                <br>
-                <div class="layout13">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur! Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem, nihil tempora? Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus est ratione amet ex? Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam ex expedita, quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero mollitia dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil ratione dicta deleniti quaerat a aliquam autem aspernatur?</p>
-
-                </div>
-                <br><br>
+            <br>
+            <div class="layout12">
+                <i class="fa-solid fa-circle-user"></i>
+                <p> Posted by John Doe | April 29 2021</p>
 
             </div>
-   
 
-            <div class="layout21"><br><br>
-                <div class="layout211">  
-
-                       <div class="pic">
-                           <img src="sg_-om3344-_zgGM1fljXI-unsplash.jpg">
-                       </div>
-                       <div class="blog">
-                         <p> BLOG POST TWO</p>
-                       </div>
-                </div>
-                <br>
-                <div class="layout22">
-                    <i class="fa-solid fa-circle-user"></i> 
-                    <p> Posted by John Doe | April 29 2021</p>
-
-                </div>
-                <br>
-                <div class="layout23">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur! Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem, nihil tempora? Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus est ratione amet ex? Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam ex expedita, quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero mollitia dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil ratione dicta deleniti quaerat a aliquam autem aspernatur?</p>
-
-                </div> <br><br>
-
-            </div>
-      
-            <div class="layout11">  <br><br> 
-
-                <div class="layout111"> 
-
-                       <div class="pic">
-                          <img src="denys-nevozhai-UzagqG756OU-unsplash.jpg">
-                       </div>
-                       <div class="blog">
-                         <p> BLOG POST THREE</p>
-                       </div>
-                </div><br>
-                <div class="layout12">
-                    <i class="fa-solid fa-circle-user"></i> 
-                    <p> Posted by John Doe | April 29 2021</p>
-
-                </div><br>
-                <div class="layout13">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur! Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem, nihil tempora? Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus est ratione amet ex? Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam ex expedita, quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero mollitia dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil ratione dicta deleniti quaerat a aliquam autem aspernatur?</p>
-
-                </div><br><br>
-
-            </div>
-       
-            <div class="layout21">   <br><br>
-                <div class="layout211"> 
-
-                       <div class="pic">
-                           <img src="avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg">
-                       </div>
-                       <div class="blog">
-                         <p> BLOG POST FOUR</p>
-                       </div>
-                </div> <br>
-                <div class="layout22">
-                    <i class="fa-solid fa-circle-user"></i> 
-                    <p> Posted by John Doe | April 29 2021</p>
-
-                </div> <br>
-                <div class="layout23">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur! Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem, nihil tempora? Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus est ratione amet ex? Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam ex expedita, quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero mollitia dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil ratione dicta deleniti quaerat a aliquam autem aspernatur?</p>
-
-                </div><br><br>
-
-            </div> 
-
-        </div>
-
-        <div class="footer">
-
-            <div class="footer1">
-                <div class="footer11">
-                    <br><br>
-                    <h3>Address</h3>
+            <br>
+            <div class="layout13">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur!
+                    Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos
+                    delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem,
+                    nihil tempora? <br>
+                    <span class="show-1 hide-1">
+                        Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus est ratione amet
+                        ex? Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam ex expedita,
+                        quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero mollitia
+                        dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto
+                        accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum
+                        sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil
+                        ratione dicta deleniti quaerat a aliquam autem aspernatur? </span>
                     <br>
-                </div>
-                <div class="footer12">
-                   <p> Mahavir Jain Vidhyalay,</p>
-                   <p> Near, Dashaporwad Society,</p>
-                  <p>  Suvidha Char rasta, Paldi,</p>
-                   <p> Ahmedabad ,Gujarat 380061 </p>
-                </div>
-    
-    
+                    <button id="btn-1" class="btn-11">Read More</button>
+                </p>
+
             </div>
-            <div class="footer2 ">
-                <div class="footer21">
-                    <br><br>
-                   <h3> Navigate </h3>
-                   <br>
-    
-                </div>
-    
-    
-                <div class="footer22">
-                 
-    
-                    <ul>
-                        <li> 
-                            <a href="index.html">Home</a>
-                        </li><br>
-                        <li>
-                            <a href="about.html"> About</a>
-                        </li><br>
-                        <li>
-                            <a href="Activities.html"> Activities</a>
-                        </li><br>
-                        <li>
-                            <a href="Blog.html"> Blog </a>
-                        </li><br>
-                        <li>
-                            <a href="work.html"> Projects</a>
-                        </li><br>
-                        <li>
-                            <a href="contact.html"> Contact</a>
-                        </li><br>
-        
-                    </ul>
-                </div>
-    
-    
-            </div>
-            <div class="footer3">
-                <div class="footer31">
-                    <br><br>
-                   <h3> Follow Me</h3>
-                   <br>
-                </div>
-                   <div class="footer32">
-                    
-                    <i class="fa-brands fa-facebook fa-2x"></i>
-                   
-                    <i class="fa-brands fa-twitter fa-2x"></i>
-    
-                   <a href="https://instagram.com/_pshah__11?igshid=YmMyMTA2M2Y=">
-                    <i class="fa-brands fa-instagram fa-2x"></i></a>
-    
-    
-                   <a href="https://www.linkedin.com/in/pshah11">
-                    <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-                    
-                   </div><br>
-    
-                    <div>
-                        <i class="fa-solid fa-envelope fa-2x"></i>
-                        <h3>
-                            Email
-                        </h3>
-                        <h4> pshah76058@gmail.com</h4><br>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-square-phone fa-2x"></i>
-                        <h3>
-                            Phone
-                        </h3>
-                        <h4>
-                            +91-1222333445
-                        </h4>
-                    </div> <br><br>
-    
-            </div>
-    
+            <br><br>
+
         </div>
-          <div class="footer4">
-            <h3> Copyright 2022 Reserved</h3>
-            <br><br><br><br>
-    
-          </div>
-    
-    
-         
+        <br>
+
+
+        <div class="layout21"><br><br>
+            <div class="layout211">
+
+                <div class="pic">
+                    <img src="sg_-om3344-_zgGM1fljXI-unsplash.jpg">
+                </div>
+                <div class="blog">
+                    <p> BLOG POST TWO</p>
+                </div>
+            </div>
+            <br>
+            <div class="layout22">
+                <i class="fa-solid fa-circle-user"></i>
+                <p> Posted by John Doe | April 29 2021</p>
+
+            </div>
+            <br>
+            <div class="layout23">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur!
+                    Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos
+                    delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem,
+                    nihil tempora? Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus est
+                    ratione amet ex? <br>
+                    <span class="show-2 hide-2">
+                        Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam ex expedita,
+                        quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero mollitia
+                        dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto
+                        accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum
+                        sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil
+                        ratione dicta deleniti quaerat a aliquam autem aspernatur?
+                    </span><br>
+
+                    <button id="btn-2" class="btn-11">Read More</button>
+                </p>
+            </div> <br><br>
+
+        </div>
+        <br>
+
+        <div class="layout11"> <br><br>
+
+            <div class="layout111">
+
+                <div class="pic">
+                    <img src="denys-nevozhai-UzagqG756OU-unsplash.jpg">
+                </div>
+                <div class="blog">
+                    <p> BLOG POST THREE</p>
+                </div>
+            </div><br>
+            <div class="layout12">
+                <i class="fa-solid fa-circle-user"></i>
+                <p> Posted by John Doe | April 29 2021</p>
+
+            </div><br>
+            <div class="layout13">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur!
+                    Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos
+                    delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem,
+                    nihil tempora? <br>
+                    <span class="show-3 hide-3">
+                        Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus est ratione amet
+                        ex? Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam ex expedita,
+                        quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero mollitia
+                        dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto
+                        accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum
+                        sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil
+                        ratione dicta deleniti quaerat a aliquam autem aspernatur?</span>
+                    <br>
+                    <button id="btn-3" class="btn-11">Read More</button>
+                </p>
+            </div><br><br>
+
+        </div>
+        <br>
+
+        <div class="layout21"> <br><br>
+            <div class="layout211">
+
+                <div class="pic">
+                    <img src="avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg">
+                </div>
+                <div class="blog">
+                    <p> BLOG POST FOUR</p>
+                </div>
+            </div> <br>
+            <div class="layout22">
+                <i class="fa-solid fa-circle-user"></i>
+                <p> Posted by John Doe | April 29 2021</p>
+
+            </div> <br>
+            <div class="layout23">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore id libero consectetur!
+                    Ipsa recusandae eum repellendus, error obcaecati soluta possimus dignissimos quo maiores quos
+                    delectus maxime, mollitia earum? Suscipit ipsa assumenda omnis aspernatur ea perspiciatis autem,
+                    <br>
+                    <span class="show-4 hide-4">
+                        nihil tempora? Deserunt doloribus architecto praesentium maxime, sunt perspiciatis repellendus
+                        est ratione amet ex? Debitis eum quisquam rerum harum laborum? Dolore eos quod voluptatum ipsam
+                        ex expedita, quibusdam debitis quisquam ullam praesentium qui neque ab! Magnam voluptatem libero
+                        mollitia dolores nihil esse neque iure quam dolore, quidem praesentium voluptas ad aperiam iusto
+                        accusantium beatae? Nesciunt, distinctio reiciendis mollitia fugiat, laudantium doloremque ipsum
+                        sint rem ut placeat ipsam officia aliquam delectus consequatur, id temporibus quam! Nihil
+                        ratione dicta deleniti quaerat a aliquam autem aspernatur?</span>
+                    <br>
+                    <button id="btn-4" class="btn-11">Read More</button>
+                </p>
+
+            </div><br><br>
+
+        </div>
+        <br>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="footer1">
+            <div class="footer11">
+                <br><br>
+                <h3>Address</h3>
+                <br>
+            </div>
+            <div class="footer12">
+                <p> Mahavir Jain Vidhyalay,</p>
+                <p> Near, Dashaporwad Society,</p>
+                <p> Suvidha Char rasta, Paldi,</p>
+                <p> Ahmedabad ,Gujarat 380061 </p>
+            </div>
+
+
+        </div>
+        <div class="footer2 ">
+            <div class="footer21">
+                <br><br>
+                <h3> Navigate </h3>
+                <br>
+
+            </div>
+
+
+            <div class="footer22">
+
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li><br>
+                    <li>
+                        <a href="about.html"> About</a>
+                    </li><br>
+                    <li>
+                        <a href="Activities.html"> Activities</a>
+                    </li><br>
+                    <li>
+                        <a href="Blog.html"> Blog </a>
+                    </li><br>
+                    <li>
+                        <a href="work.html"> Projects</a>
+                    </li><br>
+                    <li>
+                        <a href="contact.html"> Contact</a>
+                    </li><br>
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="footer3">
+            <div class="footer31">
+                <br><br>
+                <h3> Follow Me</h3>
+                <br>
+            </div>
+            <div class="footer32">
+
+                <i class="fa-brands fa-facebook fa-2x"></i>
+
+                <i class="fa-brands fa-twitter fa-2x"></i>
+
+                <a href="https://instagram.com/_pshah__11?igshid=YmMyMTA2M2Y=">
+                    <i class="fa-brands fa-instagram fa-2x"></i></a>
+
+
+                <a href="https://www.linkedin.com/in/pshah11">
+                    <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+
+            </div><br>
+
+            <div>
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <h3>
+                    Email
+                </h3>
+                <h4> pshah76058@gmail.com</h4><br>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-phone fa-2x"></i>
+                <h3>
+                    Phone
+                </h3>
+                <h4>
+                    +91-1222333445
+                </h4>
+            </div> <br><br>
+
+        </div>
+
+    </div>
+    <div class="footer4">
+        <h3> Copyright 2022 Reserved</h3>
+        <br><br><br><br>
+
+    </div>
+
+    <script>
+
+        const btn = document.querySelector('#btn-1');
+        const text = document.querySelector('.show-1');
+
+        btn.addEventListener('click', function () {
+            text.classList.toggle('hide-1')
+
+            btn.textContent == "Read More"
+                ? (btn.textContent = "Read Less") : (btn.textContent = "Read More");
+        })
+
+        const btn1 = document.querySelector('#btn-2');
+        const text1 = document.querySelector('.show-2');
+
+        btn1.addEventListener('click', function () {
+            text1.classList.toggle('hide-2')
+
+            btn1.textContent == "Read More"
+                ? (btn1.textContent = "Read Less") : (btn1.textContent = "Read More");
+        })
+
+        const btn2 = document.querySelector('#btn-3');
+        const text2 = document.querySelector('.show-3');
+
+        btn2.addEventListener('click', function () {
+            text2.classList.toggle('hide-3')
+
+            btn2.textContent == "Read More"
+                ? (btn2.textContent = "Read Less") : (btn2.textContent = "Read More");
+        })
+
+        const btn3 = document.querySelector('#btn-4');
+        const text3 = document.querySelector('.show-4');
+
+        btn3.addEventListener('click', function () {
+            text3.classList.toggle('hide-4')
+
+            btn3.textContent == "Read More"
+                ? (btn3.textContent = "Read Less") : (btn3.textContent = "Read More");
+        })
+
+    </script>
+
 </body>
+
 </html>

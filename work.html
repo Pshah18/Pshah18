@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .header
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list li
+        {
+            display: inline;
+            list-style-type: none;
+            
+            
+        }
+
+        .list li a
+        {
+          text-decoration: none;
+          color: white;
+          font-size:25px;
+          font-weight: 500;
+          font-style: normal;
+          padding: 10px 20px;
+          transition: 1s;
+
+        }
+
+        .list li a:hover  
+        {
+            background: white;
+            color: grey ;
+            transform: scale(1);
+        }
+        
+        .header
+        {
+            background-image: url(./bg-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+             height: 17vh;
+            position: relative;
+        }
+
+        *
+        {
+            margin: 0%;
+            padding: 0%;
+
+        }
+        
+        .list
+        {
+            padding-top: 2%;
+            padding-right: 1%;
+        }
+
+        .header1 img
+            { 
+               width: 2cm;
+               height: 2cm;
+               float: left;
+               padding-left: 25%;
+               padding-top: 15%;
+               filter: invert(1);
+               
+            }
+            
+            .line
+            {
+                border: yellow 2px solid;
+
+            }
+
+            .layout1{
+                background-color: rgb(252, 211, 129);
+                height: 350px;
+
+            }
+
+            .layout11{
+                text-align: center;
+                padding-top: 38mm;
+                font-size: 35px;
+                font-weight: bolder;
+            }
+
+            .layout2{
+                background-color: rgb(243, 243, 185);
+            }
+
+            .layout22
+            {
+                padding-left: 10mm;
+                padding-right: 10mm;
+                font-size: 20px;
+            }
+
+            .h3 {
+                color: #ffbc00;
+                /* text-align: center; */
+              }
+              .projects {
+                line-height: 1.5rem;
+              }
+              .project_grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                background: #555;
+                color: rgb(253, 253, 253);
+              }
+              .pre {
+                overflow-y: scroll;
+                overflow-x: scroll;
+                height: 40vh;
+              }
+              h2 {
+                font-size: 2rem;
+                line-height: 5rem;
+                color: rgb(11, 11, 11);
+                margin-left: 1rem;
+              }
+
+              .pname1 .images
+              {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ;
+                grid-gap: 0.5cm;
+                text-align: center;
+              }
+
+              .images img{
+                height: 12cm;
+                width: 9cm;
+              }
+              
+          
+              .pname2 .i1 img{
+                height: 12cm;
+                width: 30cm;
+              }
+
+            
+
+              .a1 img
+              {
+                height: 10cm;
+                width: 25cm;
+              }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                background-color:  rgb(167, 152, 152);
+                padding-left: 15mm;
+                padding-right: 15mm;
+
+             }
+
+             .footer .footer1 .footer11{
+                text-decoration: underline yellow;
+                text-align: center;
+             }
+
+             .footer .footer1 .footer12{
+                text-align: center;
+             }
+
+             .footer .footer2 .footer21
+             {
+                text-align: center;
+                text-decoration: underline yellow;
+             }
+
+             .footer .footer2 .footer22 li a{
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+             }
+
+             .footer .footer2 .footer22 li a:hover
+             {
+                  color: red;
+                  font-size: 5mm;
+                  transition: all 1s;
+             }
+
+             .footer .footer3 .footer32{
+                display: flex;
+                justify-content: space-between;
+             }
+
+             .footer3 .footer31 
+             {
+               text-decoration: underline yellow;
+               
+             }
+
+             .footer4
+             {
+                text-align: center;
+                background-color: rgb(167, 152, 152);
+             }
+ 
+             .footer22  li{
+                list-style-type: none;
+             }
+
+             .footer32 i:hover
+             {
+                color: darkorange;
+                border-radius: 50%;
+                background-color: lightgrey;
+                transition: all 1s;
+             }
+            
+             .layout62 img
+             {
+                border-radius: 50%;
+                height: 1.3cm;
+                width: 1.3cm;
+             }
+
+             .layout622
+             {
+                padding-top: 3mm;
+                padding-left: 1mm;
+             }
+            
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+      
+        <div class="header1">
+           
+           <img src="Screenshot.png" alt="logo">
+        
+        </div>
+        <div class="list">
+            <ul>
+                <li> 
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="Activities.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="Blog.html"> Blog </a>
+                </li>
+                <li>
+                    <a href="work.html"> Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+        </div>
+
+         <hr class="line">
+
+         <div class="layout1">
+            <div class="layout11">
+                 <p> MY PROJECTS </p>
+            </div>
+         </div>
+      <br>
+         <div class="projectname">
+               <div class="pname1">
+
+                <h1> Resturant Website</h1>
+                <br><br>
+                <div class="images">
+                <img src="r1.jpeg" alt="">
+                <img src="r2.jpeg" alt="">
+                <img src="r3.jpeg" alt="">
+                <img src="r4.jpeg" alt="">
+                <img src="r5.jpeg" alt="">
+                <img src="r6.jpeg" alt="">
+               </div>
+                <br><br>
+                </div>
+
+                <div class="pname2">
+
+                    <h1> Progress Bar</h1>
+                    <br><br>
+                    <div class="i1">
+                    <img src="p1.jpeg" alt="">
+                
+                    
+                   </div>
+                    <br><br>
+                </div>
+         
+                <div class="pname3">
+
+                    <h1> Animation</h1>
+                    <br><br>
+                    <div class="a1">
+                    <img src="animation.jpeg" alt="">
+                    
+                    
+                   </div>
+                    <br><br>
+                </div>
+
+         </div>
+
+         <div class="footer">
+
+            <div class="footer1">
+                <div class="footer11">
+                    <br><br>
+                    <h3>Address</h3>
+                    <br>
+                </div>
+                <div class="footer12">
+                   <p> Mahavir Jain Vidhyalay,</p>
+                   <p> Near, Dashaporwad Society,</p>
+                  <p>  Suvidha Char rasta, Paldi,</p>
+                   <p> Ahmedabad ,Gujarat 380061 </p>
+                </div>
+    
+    
+            </div>
+            <div class="footer2 ">
+                <div class="footer21">
+                    <br><br>
+                   <h3> Navigate </h3>
+                   <br>
+    
+                </div>
+    
+    
+                <div class="footer22">
+                 
+    
+                    <ul>
+                        <li> 
+                            <a href="index.html">Home</a>
+                        </li><br>
+                        <li>
+                            <a href="about.html"> About</a>
+                        </li><br>
+                        <li>
+                            <a href="Activities.html"> Activities</a>
+                        </li><br>
+                        <li>
+                            <a href="Blog.html"> Blog </a>
+                        </li><br>
+                        <li>
+                            <a href="work.html"> Projects</a>
+                        </li><br>
+                        <li>
+                            <a href="contact.html"> Contact</a>
+                        </li><br>
+        
+                    </ul>
+                </div>
+    
+    
+            </div>
+            <div class="footer3">
+                <div class="footer31">
+                    <br><br>
+                   <h3> Follow Me</h3>
+                   <br>
+                </div>
+                   <div class="footer32">
+                    
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                   
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+    
+                   <a href="https://instagram.com/_pshah__11?igshid=YmMyMTA2M2Y=">
+                    <i class="fa-brands fa-instagram fa-2x"></i></a>
+    
+    
+                   <a href="https://www.linkedin.com/in/pshah11">
+                    <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                    
+                   </div><br>
+    
+                    <div>
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                        <h3>
+                            Email
+                        </h3>
+                        <h4> pshah76058@gmail.com</h4><br>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-square-phone fa-2x"></i>
+                        <h3>
+                            Phone
+                        </h3>
+                        <h4>
+                            +91-1222333445
+                        </h4>
+                    </div> <br><br>
+    
+            </div>
+    
+        </div>
+          <div class="footer4">
+            <h3> Copyright 2022 Reserved</h3>
+            <br><br><br><br>
+    
+          </div>
+    
+</body>
+</html>
